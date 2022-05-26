@@ -1,16 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="bg-white">
+    <div class="w-2/3 mx-auto">
+      <topNav/>
+    </div>
+  </div>
+  <div class="w-full bg-slate-50">
+    <div class="w-2/3 mx-auto ">
+      <homeIndex />
+      <picIndex />
+    </div>
+  </div>
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  
+  <div class="w-full bg-white">
+    <indexFooter/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import topNav from './components/topNav.vue'
+import homeIndex from './components/homeIndex.vue'
+import picIndex from './components/picIndex.vue'
+import indexFooter from './components/indexFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    topNav,
+    homeIndex,
+    picIndex,
+    indexFooter
+}
 }
 </script>
 
@@ -21,6 +41,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
